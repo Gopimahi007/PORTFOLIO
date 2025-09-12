@@ -27,7 +27,10 @@ body {
     line-height: 1.6;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     line-height: 1.2;
     font-weight: 700;
 }
@@ -56,6 +59,30 @@ h2::after {
 .section {
     padding: 100px 10%;
     border-top: 1px solid var(--border-color);
+}
+
+/* --- Buttons --- */
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 14px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #0056b3;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    outline: none;
 }
 
 /* --- Header & Navigation --- */
@@ -111,55 +138,26 @@ nav {
     cursor: pointer;
 }
 
-/* --- Buttons --- */
-.btn {
-    display: inline-block;
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 14px 30px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
-    letter-spacing: 0.5px;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.btn:hover,
-.btn:focus {
-    background-color: #0056b3;
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    outline: none;
-}
-
 /* --- Home Section --- */
 #home {
     display: flex;
-    flex-direction: column;
+    
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-height: 100vh;
-    background: var(--background-color);
-    color: var(--text-color);
-    padding-top: 80px;
-    border-top: none;
+    
+    
+    
+    
+    
 }
-
 .home-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 25px;
     max-width: 900px;
-    padding: 40px;
-    background-color: var(--card-bg-color);
-    border: 1px solid var(--border-color);
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    
 }
 
 .home-profile-pic {
@@ -194,6 +192,9 @@ nav {
     font-size: 1.15rem;
     color: var(--text-color);
 }
+
+
+
 
 /* --- About Section --- */
 #about {
@@ -237,7 +238,7 @@ nav {
     background-color: var(--card-bg-color);
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
     text-align: center;
     font-size: 1.2rem;
     font-weight: 600;
@@ -249,7 +250,7 @@ nav {
 .skill-card:hover,
 .skill-card:focus-within {
     transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
     border-color: var(--primary-color);
 }
 
@@ -260,7 +261,8 @@ nav {
 }
 
 /* --- Projects & Certificates Section --- */
-.projects-container, .certificates-container {
+.projects-container,
+.certificates-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
@@ -272,7 +274,7 @@ nav {
     background: var(--card-bg-color);
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
@@ -282,7 +284,7 @@ nav {
 .card:hover,
 .card:focus-within {
     transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
     border-color: var(--primary-color);
 }
 
@@ -330,7 +332,7 @@ nav {
     transition: color 0.3s ease;
 }
 
-.project-links a:hover, 
+.project-links a:hover,
 .project-links a:focus {
     color: var(--section-heading-color);
     outline: none;
@@ -369,7 +371,7 @@ nav {
     height: auto;
     border-radius: 8px;
     margin-bottom: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 /* --- Contact Section --- */
@@ -432,10 +434,9 @@ nav {
     margin-left: 10px;
 }
 
-
 .button-container {
-    text-align: center; 
-    margin-top: 20px; /* Optional: adds some space above the button */
+    text-align: center;
+    margin-top: 20px;
 }
 
 /* --- Footer --- */
@@ -451,29 +452,10 @@ footer {
 }
 
 .footer-name {
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 600;
     margin: 0;
     color: #ffffff;
-}
-
-.social-links {
-    margin: 0;
-    display: flex;
-    gap: 25px;
-}
-
-.social-links a {
-    color: var(--light-text-color);
-    font-size: 1.8rem;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.social-links a:hover,
-.social-links a:focus {
-    color: var(--primary-color);
-    transform: scale(1.15);
-    outline: none;
 }
 
 .copyright-text {
@@ -482,7 +464,49 @@ footer {
     margin: 0;
 }
 
-/* --- Animations for Skills Section --- */
+/* --- Social Links (Used in Home and Footer) --- */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Styling for social links in the #home section (light background) */
+#home .social-links {
+    margin: 25px 0;
+}
+
+#home .social-links a {
+    color: #333333;
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#home .social-links a:hover {
+    color: var(--primary-color);
+    transform: scale(1.2);
+}
+
+/* Styling for social links in the footer (dark background) */
+footer .social-links {
+    margin: 0;
+}
+
+footer .social-links a {
+    color: var(--light-text-color);
+    font-size: 1.8rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .social-links a:hover,
+footer .social-links a:focus {
+    color: var(--primary-color);
+    transform: scale(1.15);
+    outline: none;
+}
+
+/* --- Animations --- */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -499,7 +523,14 @@ footer {
     animation: fadeInUp 0.8s ease-out forwards;
 }
 
-/* Staggered animation delays */
+/* Staggered animation delays for up to 16 skills */
+.skills-container .animated-skill {
+    /* Base animation properties */
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Simple loop-like delay assignment using individual properties */
 .skills-container .animated-skill:nth-child(1) { animation-delay: 0.1s; }
 .skills-container .animated-skill:nth-child(2) { animation-delay: 0.2s; }
 .skills-container .animated-skill:nth-child(3) { animation-delay: 0.3s; }
@@ -516,7 +547,6 @@ footer {
 .skills-container .animated-skill:nth-child(14) { animation-delay: 1.4s; }
 .skills-container .animated-skill:nth-child(15) { animation-delay: 1.5s; }
 .skills-container .animated-skill:nth-child(16) { animation-delay: 1.6s; }
-
 
 /* --- Responsive Design --- */
 @media (max-width: 992px) {
@@ -572,7 +602,8 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .projects-container, .certificates-container {
+    .projects-container,
+    .certificates-container {
         grid-template-columns: 1fr;
     }
 }
@@ -597,7 +628,8 @@ footer {
     .logo {
         font-size: 1.4rem;
     }
-    .home-profile-pic, .profile-pic {
+    .home-profile-pic,
+    .profile-pic {
         width: 150px;
         height: 150px;
         min-width: 150px;
