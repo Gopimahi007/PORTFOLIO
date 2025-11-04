@@ -9,12 +9,23 @@
 </head>
 <body>
 
+    <!-- Animated Star Background -->
+    <div class="stars-container">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
 
-
+    <!-- Gradient Overlay -->
+    <div class="gradient-overlay"></div>
 
     <header>
         <nav>
-            <a href="#home" class="logo">Code with Gopi</a>
+            <a href="#home" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                Code with Gopi
+                <span class="logo-bracket">/&gt;</span>
+            </a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -27,233 +38,242 @@
 
     <main>
 
-
-
-          <!-- Home Section -->
-
-        
-    <section id="home" class="section">
-    <div class="home-content">
-        <img src="assets/home.png" alt="Your Name" class="home-profile-pic">
-        <h1>GOPIKA S</h1>
-        <h2 class="subtitle">Data Analyst & Developer</h2>
-        <p>
-            Welcome to my personal portfolio. I specialize in turning data into insights and building elegant, user-friendly applications.
-        </p>
-        <a href="#projects" class="btn">View My Work</a>
-    </div>
-</section>
-
-
-
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <div class="home-content">
+                <div class="profile-img-wrapper">
+                    <img src="assets/home.png" alt="Gopika S" class="home-profile-pic">
+                    <div class="profile-ring"></div>
+                    <div class="profile-ring ring-2"></div>
+                </div>
+                <h1 class="glitch" data-text="GOPIKA S">GOPIKA S</h1>
+                <h2 class="subtitle typing-effect">Data Analyst & Developer</h2>
+                <p class="fade-in-text">
+                    Welcome to my personal portfolio. I specialize in turning data into insights and building elegant, user-friendly applications.
+                </p>
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <div class="btn-particles"></div>
+                </a>
+            </div>
+        </section>
 
         <!-- About Section -->
-
-
-<section id="about" class="section">
-    <h2>About Me</h2>
-    <div class="about-content">
-        <img src="assets/about.jpeg" alt="Your Name" class="profile-pic">
-        <div class="about-text">
-            <p>
-                I'm a Data Analyst with a computer science background, driven by a passion for uncovering insights and narratives hidden within complex datasets. Proficient in Python, SQL, and Power BI, I specialize in transforming raw data into actionable intelligence that informs business strategy. When not crunching numbers, I enjoy building responsive websites and am always seeking new challenges to expand my skills.
-            </p>
-        
-                
-        </div>
-    </div>
-</section>
-
-
+        <section id="about" class="section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="profile-img-wrapper about-img">
+                    <img src="assets/about.jpeg" alt="Gopika S" class="profile-pic">
+                    <div class="profile-glow"></div>
+                </div>
+                <div class="about-text">
+                    <p>
+                        I'm a Data Analyst with a computer science background, driven by a passion for uncovering insights and narratives hidden within complex datasets. Proficient in Python, SQL, and Power BI, I specialize in transforming raw data into actionable intelligence that informs business strategy. When not crunching numbers, I enjoy building responsive websites and am always seeking new challenges to expand my skills.
+                    </p>
+                </div>
+            </div>
+        </section>
 
         <!-- Skills Section -->
-
-
-    <section id="skills" class="section">
-    <h2>My Skills</h2>
-    <div class="skills-container">
-        
-
-        <div class="skill-card animated-skill"><i class="fab fa-python"></i> Python</div>
-        <div class="skill-card animated-skill"><i class="fas fa-database"></i> SQL</div>
-        <div class="skill-card animated-skill"><i class="fab fa-java"></i> Java</div>
-        
-        <div class="skill-card animated-skill"><i class="fas fa-chart-bar"></i> Power BI</div>
-        <div class="skill-card animated-skill"><i class="fas fa-palette"></i> UI/UX Design</div>
-        
-        <div class="skill-card animated-skill"><i class="fab fa-html5"></i> HTML5</div>
-        <div class="skill-card animated-skill"><i class="fab fa-css3-alt"></i> CSS3</div>
-        <div class="skill-card animated-skill"><i class="fab fa-js"></i> JavaScript</div>
-
-        
-    </div>
-</section>
-
-
-
-
+        <section id="skills" class="section">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card animated-skill">
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <span>Python</span>
+                    <div class="skill-glow"></div>
+                </div>
+                <div class="skill-card animated-skill">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <span>SQL</span>
+                    <div class="skill-glow"></div>
+                </div>
+                <div class="skill-card animated-skill">
+                    <div class="skill-icon"><i class="fab fa-java"></i></div>
+                    <span>Java</span>
+                    <div class="skill-glow"></div>
+                </div>
+                <div class="skill-card animated-skill">
+                    <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+                    <span>Power BI</span>
+                    <div class="skill-glow"></div>
+                </div>
+                <div class="skill-card animated-skill">
+                    <div class="skill-icon"><i class="fas fa-palette"></i></div>
+                    <span>UI/UX Design</span>
+                    <div class="skill-glow"></div>
+                </div>
+                <div class="skill-card animated-skill">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <span>HTML5</span>
+                    <div class="skill-glow"></div>
+                </div>
+                <div class="skill-card animated-skill">
+                    <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                    <span>CSS3</span>
+                    <div class="skill-glow"></div>
+                </div>
+                <div class="skill-card animated-skill">
+                    <div class="skill-icon"><i class="fab fa-js"></i></div>
+                    <span>JavaScript</span>
+                    <div class="skill-glow"></div>
+                </div>
+            </div>
+        </section>
 
         <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-container">
+                <div class="project-card card">
+                    <div class="card-glow"></div>
+                    <h3>Sales Performance Dashboard</h3>
+                    <p>Analyzed superstore sales data to identify top-performing products and regions. Created an interactive Power BI dashboard to visualize key metrics and sales trends.</p>
+                    <div class="project-tech">
+                        <span>Excel</span>
+                        <span>Power BI</span>
+                        <span>SQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Gopimahi007/Sales_Dashboard" target="_blank" class="btn btn-secondary">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
 
+                <div class="project-card card">
+                    <div class="card-glow"></div>
+                    <h3>Customer Churn Analysis</h3>
+                    <p>Performed exploratory data analysis (EDA) on telecom data to identify key factors driving customer churn, providing actionable insights for retention strategies.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Matplotlib</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Gopimahi007/Customer-Churn-Analysis" target="_blank" class="btn btn-secondary">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
 
-       <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="projects-container">
-
-        <div class="project-card card"> <h3>Sales Performance Dashboard</h3>
-            <p>Analyzed superstore sales data to identify top-performing products and regions. Created an interactive Power BI dashboard to visualize key metrics and sales trends.</p>
-            <div class="project-tech">
-                <span>Excel</span>
-                <span>Power BI</span>
-                <span>SQL</span>
+                <div class="project-card card">
+                    <div class="card-glow"></div>
+                    <h3>Covid-19 Impact Tracker</h3>
+                    <p>Developed a time-series dashboard to track and visualize the global spread of Covid-19. Focused on data cleaning and clear presentation of pandemic trends over time.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Data Cleaning</span>
+                        <span>Tableau</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="btn btn-secondary">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="project-links">
-                <a href="https://github.com/Gopimahi007/Sales_Dashboard" target="_blank">View on GitHub</a>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="section">
+            <h2 class="section-title">Certificates</h2>
+            <div class="certificates-container">
+                <div class="cert-card card">
+                    <div class="card-glow"></div>
+                    <img src="assets/hackathon.jpg" alt="Hackathon Certificate" class="cert-image">
+                    <h4>INTELLINA Hackathon</h4>
+                    <p>Issued by: CIET College</p>
+                    <a href="#" target="_blank" class="btn btn-secondary">View Credential</a>
+                </div>
+
+                <div class="cert-card card">
+                    <div class="card-glow"></div>
+                    <img src="assets/ai.jpeg" alt="AI Certificate" class="cert-image">
+                    <h4>AI for Beginners</h4>
+                    <p>Issued by: HP Life</p>
+                    <a href="#" target="_blank" class="btn btn-secondary">View Credential</a>
+                </div>
+
+                <div class="cert-card card">
+                    <div class="card-glow"></div>
+                    <img src="assets/ui ux.jpg" alt="UI/UX Certificate" class="cert-image">
+                    <h4>UI/UX Design</h4>
+                    <p>Issued by: NoviTech</p>
+                    <a href="#" target="_blank" class="btn btn-secondary">View Credential</a>
+                </div>
+
+                <div class="cert-card card">
+                    <div class="card-glow"></div>
+                    <img src="path/to/your/python-data-science-certificate.jpg" alt="Python Certificate" class="cert-image">
+                    <h4>Python for Data Science</h4>
+                    <p>Issued by: Udemy</p>
+                    <a href="#" target="_blank" class="btn btn-secondary">View Credential</a>
+                </div>
+
+                <div class="cert-card card">
+                    <div class="card-glow"></div>
+                    <img src="path/to/your/sql-certificate.jpg" alt="SQL Certificate" class="cert-image">
+                    <h4>Advanced SQL for Data Analysis</h4>
+                    <p>Issued by: LinkedIn Learning</p>
+                    <a href="#" target="_blank" class="btn btn-secondary">View Credential</a>
+                </div>
+
+                <div class="cert-card card">
+                    <div class="card-glow"></div>
+                    <img src="assets/coding.jpg" alt="Coding Certificate" class="cert-image">
+                    <h4>RRR Coding & Web Design</h4>
+                    <p>Issued by: CIET College</p>
+                    <a href="#" target="_blank" class="btn btn-secondary">View Credential</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">I'm currently open to new opportunities. Feel free to send me a message!</p>
+
+            <form action="https://formspree.io/f/mgvlqodn" method="POST" class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    <div class="input-border"></div>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    <div class="input-border"></div>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" id="message" rows="6" placeholder="Your Message" required></textarea>
+                    <div class="input-border"></div>
+                </div>
                 
-            </div>
-        </div>
-
-        <div class="project-card card"> <h3>Customer Churn Analysis</h3>
-            <p>Performed exploratory data analysis (EDA) on telecom data to identify key factors driving customer churn, providing actionable insights for retention strategies.</p>
-            <div class="project-tech">
-                <span>Python</span>
-                <span>Pandas</span>
-                <span>Matplotlib</span>
-            </div>
-            <div class="project-links">
-                <a href="https://github.com/Gopimahi007/Customer-Churn-Analysis" target="_blank">View on GitHub</a>
-            </div>
-        </div>
-
-        <div class="project-card card"> <h3>Covid-19 Impact Tracker</h3>
-            <p>Developed a time-series dashboard to track and visualize the global spread of Covid-19. Focused on data cleaning and clear presentation of pandemic trends over time.</p>
-            <div class="project-tech">
-                <span>Python</span>
-                <span>Data Cleaning</span>
-                <span>Tableau</span>
-            </div>
-            <div class="project-links">
-                <a href="#" target="_blank">View on GitHub</a>
-            </div>
-        </div>
-
-    </div>
-
-
-
-
-                
-            <!-- Project Section -->
-
-</section>
-<section id="certificates" class="section">
-    <h2>Certificates</h2>
-    <div class="certificates-container">
-
-        <div class="cert-card card">
-            <img src="assets/hackathon.jpg" alt="Responsive Web Design Certificate" class="cert-image">
-            <h4>INTELLINA Hackathon</h4>
-            <p>Issued by: CIET College</p>
-            <a href="#" target="_blank">View Credential</a>
-        </div>
-
-        <div class="cert-card card">
-            <img src="assets/ai.jpeg" alt="JavaScript Algorithms and Data Structures Certificate" class="cert-image">
-            <h4>AI for Beginners</h4>
-            <p>Issued by: HP Life</p>
-            <a href="#" target="_blank">View Credential</a>
-        </div>
-
-        <div class="cert-card card">
-            <img src="assets/ui ux.jpg" alt="Data Analytics Certificate" class="cert-image">
-            <h4>UI/UX</h4>
-            <p>Issued by: NoviTech</p>
-            <a href="#" target="_blank">View Credential</a>
-        </div>
-
-        <div class="cert-card card">
-            <img src="path/to/your/python-data-science-certificate.jpg" alt="Python for Data Science Certificate" class="cert-image">
-            <h4>Python for Data Science and Machine Learning</h4>
-            <p>Issued by: Udemy</p>
-            <a href="#" target="_blank">View Credential</a>
-        </div>
-
-        <div class="cert-card card">
-            <img src="path/to/your/sql-certificate.jpg" alt="SQL Certificate" class="cert-image">
-            <h4>Advanced SQL for Data Analysis</h4>
-            <p>Issued by: LinkedIn Learning</p>
-            <a href="#" target="_blank">View Credential</a>
-        </div>
-
-        <div class="cert-card card">
-            <img src="assets/coding.jpg" alt="Power BI Certificate" class="cert-image">
-            <h4>RRR Coding & Web Design</h4>
-            <p>Issued by: CIET College</p>
-            <a href="#" target="_blank">View Credential</a>
-        </div>
-
-    </div>
-
-
-
-
-
-
-          <!-- Contact Section -->
-
-    
-<section id="contact" class="section">
-    <h2>Get In Touch</h2>
-    <p>I'm currently open to new opportunities. Feel free to send me a message!</p>
-
-    <form action="https://formspree.io/f/mgvlqodn" method="POST" class="contact-form">
-        <div class="form-group">
-            <input type="text" name="name" id="name" placeholder="Your Name" required>
-        </div>
-        <div class="form-group">
-            <input type="email" name="email" id="email" placeholder="Your Email" required>
-        </div>
-        <div class="form-group">
-            <textarea name="message" id="message" rows="6" placeholder="Your Message" required></textarea>
-        </div>
-        
-        <div class="button-container">
-            <button type="submit" class="btn">
-                Send Message
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
-                </svg>
-            </button>
-        </div>
-        
-    </form>
-</section>
+                <div class="button-container">
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </form>
+        </section>
     </main>
 
-
-
-
-
-        <!-- Footer Section -->
-
-<footer>
-    <div class="social-links">
-        <a href="https://github.com/Gopimahi007" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://github.com/Gopimahi007" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-    </div>
-    <p class="copyright-text">&copy; 2025 Gopika. All Rights Reserved.</p>
-</footer>
-
-
+    <!-- Footer Section -->
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/Gopimahi007" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://github.com/Gopimahi007" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+        <p class="copyright-text">&copy; 2025 Gopika. All Rights Reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
